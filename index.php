@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/jquery.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/signature.js"></script>
         <script src="js/html2pdf.js"></script>
         <script src="js/convertPDF.js"></script>
         <title>My Mobile LLC</title>
@@ -22,25 +23,28 @@
                 <div class="box">
                     <h2>New Agent Info</h2>
                 </div>
-                <div class="box">
+                <div class="box _first-name">
                     <div class="flex">
                         <div><label>First Name</label></div>
                         <div><input name="name" id="name" type="text" class="input" placeholder="Enter First Name"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _last-name">
                     <div class="flex">
                         <div><label>Last Name</label></div>
                         <div><input name="lName" id="lName" type="text" class="input" placeholder="Enter Last Name"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _ssn">
                     <div class="flex">
                         <div><label>SSN (full 9 digits)</label></div>
                         <div><input name="ssn" type="number" class="input" placeholder="Enter SSN"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _date-of-birth">
                     <div class="flex">
                         <div><label>Date of Birth</label></div>
                         <div class="container-select">
@@ -55,20 +59,23 @@
                             </select>
                         </div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _phone">
                     <div class="flex">
                         <div><label>Phone</label></div>
                         <div><input name="phone" type="tel" class="input" placeholder="Enter Phone"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _email">
                     <div class="flex">
                         <div><label>Email</label></div>
                         <div><input name="email" type="email" class="input" placeholder="Enter Email"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _id">
                     <div class="flex">
                         <div><label>Upload ID</label></div>
                         <div class="container-file">
@@ -76,8 +83,9 @@
                             <input id="txtFileID" type="file" name="txtFileID" style="display: none;" accept="image/*">
                         </div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _selfie">
                     <div class="flex">
                         <div><label>Headshot Image</label></div>
                         <div>
@@ -85,26 +93,30 @@
                             <input id="txtFileSelfie" type="file" name="txtFileSelfie" style="display: none;" accept="image/*">
                         </div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _address">
                     <div class="flex">
                         <div><label>Address</label></div>
                         <div><input name="address" id="address" type="text" class="input" placeholder="Enter Address"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _address2">
                     <div class="flex">
                         <div><label>Address 2</label></div>
                         <div><input name="address2" type="text" class="input" placeholder="Enter Address 2"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _city">
                     <div class="flex">
                         <div><label>City</label></div>
                         <div><input name="city" type="text" class="input" placeholder="Enter City"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _state">
                     <div class="flex">
                         <div><label>State</label></div>
                         <div class="container-select">
@@ -113,17 +125,46 @@
                             </select>
                         </div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
-                <div class="box">
+                <div class="box _zipcode">
                     <div class="flex">
                         <div><label>Zip Code</label></div>
                         <div><input name="zipCode" type="number" class="input" placeholder="Enter Zip Code"></div>
                     </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
+                </div>
+                <div class="box _signature">
+                    <div class="sub-box">
+                        <canvas id="pizarra"></canvas>
+                        <div class="tools">
+                            <img src="img/delete.png" id="imgDelete">
+                            <img src="img/save.png" id="imgSave">
+                        </div>
+                        <div class="signature">
+                            <p>Signature</p>
+                        </div>
+                    </div>
+                    <div class="sub-box container-label">
+                        <label>Al firmar esta aceptando autorización para el uso personal de sus datos. <a href="#">Leer terminos</a></label>
+                    </div>
+                    <div class="warning"><label>Firma requerida*</label></div>
+                </div>
+                <div class="box result">
+                    <label id="respuesta">Debe llenar todos los campos</label>
                 </div>
             </form>
             <div class="box container-button">
                 <button onclick="generatePDF()" class="txtSend">Submit</button>
             </div>
-        </div>    
+        </div>   
+        <div class="popup">
+            <div class="sub-popup">
+                <label>Firma cargada con exito</label>
+            </div>
+            <div class="sub-popup">
+                <input type="button" value="Accept" class="txtSend" id="txtAccept">
+            </div>
+        </div> 
     </body>
 </html>
