@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/jquery.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/signature.js"></script>
         <script src="js/html2pdf.js"></script>
         <script src="js/convertPDF.js"></script>
         <title>My Mobile LLC</title>
@@ -80,7 +79,7 @@
                         <div><label>Upload ID</label></div>
                         <div class="container-file">
                             <label for="txtFileID" class="lblFile">Upload Photo</label>
-                            <input id="txtFileID" type="file" name="txtFileID" style="display: none;" accept="image/*">
+                            <input id="txtFileID" type="file" name="txtFileID" style="display: none;" accept="image/*" onchange="loadFile(event, '1')">
                         </div>
                     </div>
                     <div class="warning"><label>Debe llenar este campo *</label></div>
@@ -90,7 +89,7 @@
                         <div><label>Headshot Image</label></div>
                         <div>
                             <label for="txtFileSelfie" class="lblFile">Upload Photo</label>
-                            <input id="txtFileSelfie" type="file" name="txtFileSelfie" style="display: none;" accept="image/*">
+                            <input id="txtFileSelfie" type="file" name="txtFileSelfie" style="display: none;" accept="image/*" onchange="loadFile(event, '2')">
                         </div>
                     </div>
                     <div class="warning"><label>Debe llenar este campo *</label></div>
@@ -157,7 +156,8 @@
             <div class="box container-button">
                 <button onclick="generatePDF()" class="txtSend">Submit</button>
             </div>
-        </div>   
+        </div> 
+        <!--  
         <div class="popup">
             <div class="sub-popup">
                 <label>Firma cargada con exito</label>
@@ -166,5 +166,6 @@
                 <input type="button" value="Accept" class="txtSend" id="txtAccept">
             </div>
         </div> 
+        -->
     </body>
 </html>
