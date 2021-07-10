@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     <div class="sub-box container-label">
-                        <label>Al firmar esta aceptando autorización para el uso personal de sus datos. <a href="#">Leer terminos</a></label>
+                        <label>By signing you are accepting authorization for the use of your personal data. <a href="php/termsConditions.php">See Terms and Conditions</a></label>
                     </div>
                     <div class="warning"><label>Firma requerida*</label></div>
                 </div>

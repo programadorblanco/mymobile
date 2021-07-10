@@ -196,18 +196,20 @@ function generatePDF(){
                         "this authorization. If you are a New York applicant, a copy of New York’s law on the use of criminal records is attached. " + 
                         "By signing below, you acknowledge receipt of these documents. Personal Information: <br><br>Please print the information " + 
                         "requested below to identify yourself for BGC.</p>" + 
-                    "</center><br><br>" + 
-                    "<div style='font-size: 12px'>" + 
-                        "Printed name: <u>" + document.getElementById("name").value + " " + document.getElementById("lName").value + "</u><br>" +
-                        "Other names used: <u>" + document.getElementById("name").value + "</u><br>" +
-                        "Current and former addresses: <u>" + document.getElementById("address").value + "</u><br>" +
-                    "</div>" +
-                    "<hr><br>";
-    const element = "<br><hr>" + document.getElementById("name").value + 
-                    "</div><hr><br>" + 
-                    "<img src='" + signature + "'>" +
-                    "<img src='" + direccion1 + "'>" +
-                    "<img src='" + direccion2 + "'>";
+                    "</center>";
+                    //"<br><div style='text-align: justify; width: 75%; font-size: 12px'>" + 
+                        //"Printed name: <u>" + document.getElementById("name").value + " " + document.getElementById("lName").value + "</u><br>" +
+                        //"Other names used: <u>" + document.getElementById("name").value + "</u><br>" +
+                        //"Current and former addresses: <u>" + document.getElementById("address").value + "</u>" +
+                    //"</div>";
+    const element = "<hr style='width: 75%'><br><br><br><br><br><br><br><br><br><br>" + 
+                    "<center>" + 
+                        "<img src='" + signature + "' width='300px'>" + 
+                        "<hr style='width: 50%'>" + 
+                        document.getElementById("name").value + " " + document.getElementById("lName").value +
+                    "</center>";
+                    //"<img src='" + direccion1 + "' width='300px'>" +
+                    //"<img src='" + direccion2 + "' width='300px'>";
 
     html2pdf().from(body1 + element).save();
 };
