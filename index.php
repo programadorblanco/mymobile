@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="sub-box container-label">
-                        <label>By signing you are accepting authorization for the use of your personal data. <a href="php/termsConditions.php">See Terms and Conditions</a></label>
+                        <label>By signing you are accepting authorization for the use of your personal data. <a href="termsConditions.php" target="_blank">See Terms and Conditions</a></label>
                     </div>
                 </div>
                 <div class="box result">
