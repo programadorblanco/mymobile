@@ -228,6 +228,7 @@ window.addEventListener("load", function(){
             generatePDF();
             $('.popup').show(500);
             $('.popup').css("display", "flex");
+            setTimeout(function(){ location.reload(); }, 3250);
         }
         else{
             for(var j = 0; j < warnings.length; j++){
