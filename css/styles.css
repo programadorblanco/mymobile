@@ -5,7 +5,8 @@
     INDICE
     01 GLOBALES
     02 FORMULARIO
-    03 MOVIL
+    03 PDF
+    04 MOVIL
 */
 
 /********************** 01 ************************/
@@ -138,7 +139,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 canvas {
     width: 550px;
-    height: 450px;
+    height: 280px;
     background-color: #efefef;
     margin: 0;
     padding: 0;
@@ -180,14 +181,9 @@ canvas {
     width: 47%;
 }
 
-#imgSave, #imgDelete {
-    width: 20px;
+#imgDelete {
     cursor: pointer;
-}
-
-#imgSave{
-    margin-left: 8px;
-    margin-right: 12px;
+    background-color: red;
 }
 
 .sub-flex{
@@ -210,6 +206,7 @@ canvas {
 .result {
     border: 2px solid red;
     padding: 10px;
+    text-align: right;
 }
 
 .result, .warning{
@@ -237,10 +234,38 @@ canvas {
     width: 145px;
     margin-top: 11px;
 }
+
+.popup{
+    display: none;
+}
+
+.message {
+    text-align: right;
+    color: green;
+    display: none;
+}
+
 /*************************************************/
 
 
+
 /********************** 03 ************************/
+.justify{
+    text-align: justify;
+}
+
+.body{
+    padding: 60px;
+}
+
+.pdf-img{
+    width: 100px;
+}
+/*************************************************/
+
+
+
+/********************** 04 ************************/
 @media (max-width: 650px){
     .container-form {
         width: 100%;
@@ -264,8 +289,8 @@ canvas {
     }
 
     canvas{
-        width: 290;
-        height: 290;
+        width: 290px;
+        height: 290px;
     }
 }
 /**************************************************/

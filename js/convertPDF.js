@@ -1,7 +1,8 @@
-let signature = "";
-
 window.addEventListener("load", function(){
-//======================================================================
+    let signature = "";
+    var dataUrl = "data:image/png;base64,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";
+    var direccion1 = '', direccion2 = '', direccion3 = '';
+    //======================================================================
     //======================================================================
     // LOGICA PARA EL CANVA
     //======================================================================
@@ -34,7 +35,7 @@ window.addEventListener("load", function(){
         }
         else{
             miCanvas.width = 550;
-            miCanvas.height = 450;
+            miCanvas.height = 280;
         }
 
 
@@ -121,13 +122,13 @@ window.addEventListener("load", function(){
     // BOTONES DE TOOLS PARA CANVAS
     var btnDelete = this.document.querySelector('#imgDelete');
     btnDelete.addEventListener('click', function(){
-        console.log(lineas);
+        // ELIMINAR TODAS LAS LINEAS DEL ARRAY DE SIGNATURE
         for(let i = 0; i < lineas.length; i++){
             lineas.splice(i, 1);
         }
         miCanvas.width= miCanvas.width;
         ClearCanva();
-        console.log(lineas)
+        // ELIMINAR TODAS LAS LINEAS DEL ARRAY DE SIGNATURE
         for(let i = 0; i < lineas.length; i++){
             lineas.splice(i, 1);
         }
@@ -135,81 +136,163 @@ window.addEventListener("load", function(){
     });
 
     function ClearCanva(){
-
         ctx.clearRect(0, 0, miCanvas.width, miCanvas.height);
     }
 
-    // OBTENER URL AL DAR CLICK EN GUARDAR
-    var btnSave = this.document.querySelector('#imgSave');
-    btnSave.addEventListener("click",function(){	
+    function generatePDF(){
+            const body1 = `
+                <section class="body">
+                <p class="justify">Authorization: By signing below, you authorize: (a) backgroundchecks.com (“BGC”) to request information about you from any public or private information source; (b) anyone to provide information about you to BGC; (c) BGC to provide us My Mobile, LLC and its client, TracFone Wireless, Inc., one or more reports based on that information; and (d) us to share those reports with others for legitimate business purposes related to your employment. BGC may investigate your education, work history, professional licenses and credentials, references, address history, social security number validity, right to work, criminal record, lawsuits, driving record, credit history, and any other information with public or private information sources. You acknowledge that a fax, image, or copy of this authorization is as valid as the original. You make this authorization to be valid for as long as you are an applicant or employee with us<p>
+                <img src="${direccion1}" class="pdf-img">
+                <img src="${direccion2}" class="pdf-img">
+                <img src="${direccion3}" class="pdf-img">
+                <section>
+            `;
+    
+        html2pdf().from(body1).save();
+    };
+
+    // EVENTO PARA EJECUTAR EL SUBMIT DEL FORMULARIO
+    var warnings = [];
+    var arrayProp = [];
+    $(document).on('submit', "#form", function(event){
+        event.preventDefault();
+        // CAMPOS DEL FORMULARIO
+        var name = $('#name').val();
+        var SSN = $('#ssn-full').val();
+        var phone = $('#phone').val();
+        var email = $('#email').val();
+        var address = $('#address').val();
+        var city = $('#city').val();
+        var zipcode = $('#zipcode').val();
+        var state = $('#state').val();
+        var month = $('#month').val();
+        var day = $('#day').val();
+        var year = $('#year').val();
+        var idFront = direccion1;
+        var idBack = direccion3;
+        var selfie = direccion2;
+        var arrayCampos = {
+            _name: name,
+            _ssn: SSN,
+            _phone: phone,
+            _email: email,
+            _address: address,
+            _city: city,
+            _zipcode: zipcode,
+            _state: state,
+            _day: day,
+            _month: month,
+            _year: year,
+            _idFront: idFront,
+            _idBack: idBack,
+            _selfie: selfie
+        };
+        ValidarCampos(arrayCampos);
+        var mensaje;
         if(lineas.length == 0){
             console.log("No firmo");
         }
         else{
             console.log("Firmo");
             signature = miCanvas.toDataURL("image/png");
-            console.log(signature);
         }
         
-    },false);
+        for(var key in arrayCampos){
+            arrayProp.push(key);
+        }
+
+        console.log(lineas)
+        if(warnings.length == 0 && lineas.length > 0){
+            console.log("Datos llenados");
+            generatePDF();
+            $('.popup').show(500);
+            $('.popup').css("display", "flex");
+        }
+        else{
+            console.log("Faltan datos");
+            // for(var i = 0; i < arrayProp.length; i++){
+            //     for(var j = 0; j < warnings.length; j++){
+            //         if(arrayProp[i] == warnings[j]){
+            //             mensaje = $('.'+ warnings[j] + ' .flex input');
+            //             console.log(mensaje);
+            //             mensaje.css("border", "1px solid red !important"); 
+            //         }
+            //     }
+            // }
+            $('.result').show(500);
+            warnings.splice(0, warnings.length);
+        }
+    });
+
+
+    // EVENTO PARA CARGAR LA FOTO ID DE LA PARTE DE ENFRENTE
+    var loadID = document.querySelector('#txtFileID');
+    loadID.addEventListener('change', function(event){
+        var reader = new FileReader();
+        reader.onload = function()
+        {
+            direccion1 = reader.result;
+            document.querySelector('._idFront .message').style.display = "block";
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    });
+
+    // EVENTO PARA CARGAR LA FOTO ID DE LA PARTE DE TRASERA
+    var loadIDback = document.querySelector('#txtFileIDback');
+    loadIDback.addEventListener('change', function(event){
+        var reader = new FileReader();
+        reader.onload = function()
+        {
+            direccion3 = reader.result;
+            document.querySelector('._idBack .message').style.display = "block";
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    });
+
+    // EVENTO PARA CARGAR LA FOTO SELFIE
+    var loadSelfie = document.querySelector('#txtFileSelfie');
+    loadSelfie.addEventListener('change', function(event){
+        var reader = new FileReader();
+        reader.onload = function()
+        {
+            direccion2 = reader.result;
+            document.querySelector('._selfie .message').style.display = "block";
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    });
+
+
+
+    function ValidarCampos(arrayCampos){
+        for(let key in arrayCampos){
+            if(arrayCampos[key] == ""){
+                warnings.push(key);
+            }     
+            if(key == "_state"){
+                if(arrayCampos._state == "default"){
+                    warnings.push(key);
+                }
+            }
+            if(key == "_month"){
+                if(arrayCampos._month == "default"){
+                    warnings.push(key);
+                }
+            }
+            if(key == "_day"){
+                if(arrayCampos._day == "default"){
+                    warnings.push(key);
+                }
+            }
+            if(key == "_year"){
+                if(arrayCampos._year == "default"){
+                    warnings.push(key);
+                }
+            }
+        }         
+    }
 
 });
 
-var direccion1 = '', direccion2 = '';
 
-var loadFile = function(event, idn) 
-{
-    var reader = new FileReader();
-    reader.onload = function()
-    {
-        if(idn == '1')
-        {
-            direccion1 = reader.result;
-            console.log("Dirección 1 guardada.");
-        }
-        else if(idn == '2')
-        {
-            direccion2 = reader.result;
-            console.log("Dirección 2 guardada.");
-        }
-        //var output = document.getElementById('output');
-        //output.src = reader.result;
-    };
-    reader.readAsDataURL(event.target.files[0]);
-};
 
-function generatePDF(){
-    const body1 =   "<br>" + 
-                    "<center>" + 
-                        "Authorization<hr style='width: 75%'>" +
-                        "<p style='text-align: justify; width: 75%; font-size: 12px'>" + 
-                        "Authorization: By signing below, you authorize: (a) backgroundchecks.com (“BGC”) to request information about you " + 
-                        "from any public or private information source; (b) anyone to provide information about you to BGC; (c) BGC to provide " + 
-                        "us My Mobile, LLC and its client, TracFone Wireless, Inc., one or more reports based on that information; and (d) us " + 
-                        "to share those reports with others for legitimate business purposes related to your employment. BGC may investigate " + 
-                        "your education, work history, professional licenses and credentials, references, address history, social security " + 
-                        "number validity, right to work, criminal record, lawsuits, driving record, credit history, and any other information " + 
-                        "with public or private information sources. You acknowledge that a fax, image, or copy of this authorization is as " +
-                        "valid as the original. You make this authorization to be valid for as long as you are an applicant or employee with us." + 
-                        "<br><br>" + 
-                        "The Consumer Financial Protection Bureau’s “Summary of Your Rights under the Fair Credit Reporting Act” is attached to " + 
-                        "this authorization. If you are a New York applicant, a copy of New York’s law on the use of criminal records is attached. " + 
-                        "By signing below, you acknowledge receipt of these documents. Personal Information: <br><br>Please print the information " + 
-                        "requested below to identify yourself for BGC.</p>" + 
-                    "</center>";
-                    //"<br><div style='text-align: justify; width: 75%; font-size: 12px'>" + 
-                        //"Printed name: <u>" + document.getElementById("name").value + " " + document.getElementById("lName").value + "</u><br>" +
-                        //"Other names used: <u>" + document.getElementById("name").value + "</u><br>" +
-                        //"Current and former addresses: <u>" + document.getElementById("address").value + "</u>" +
-                    //"</div>";
-    const element = "<hr style='width: 75%'><br><br><br><br><br><br><br><br><br><br>" + 
-                    "<center>" + 
-                        "<img src='" + signature + "' width='300px'>" + 
-                        "<hr style='width: 50%'>" + 
-                        document.getElementById("name").value + " " + document.getElementById("lName").value +
-                    "</center>";
-                    //"<img src='" + direccion1 + "' width='300px'>" +
-                    //"<img src='" + direccion2 + "' width='300px'>";
-
-    html2pdf().from(body1 + element).save();
-};

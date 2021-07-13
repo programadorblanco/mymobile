@@ -29,41 +29,10 @@ $(document).ready(function(){
         state.append("<option value='"+valor+"'>"+valor+"</option>");
     });  
 
-    // GENERAR PDF
-    function GenertePDF(){
-        var doc = new jsPDF();
-        doc.text(20, 20, 'Hola mundo!');
-        doc.text(20, 30, 'Esto es un generador de PDF en Java Script.');
-        doc.addPage();
-        doc.text(20, 20, '¿Cómo estas?');
-        doc.addImage(imgData, 15, 40, 180, 160);
-
-        doc.save("example.pdf");
-    }
-
-    GenertePDF(); 
-
-    /*var doc = new jsPDF();
-    doc.fromHTML(
-        $('#result'), 15, 15,
-        {width: 170},
-        function()
-        {
-            var blob = doc.output('blob');
-
-            var formData = new FormData();
-            formData.append('pdf', blob);
-
-            $.ajax('./php/upload.php',
-            {
-                method: 'POST',
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function(data){console.log(data)},
-                error: function(data){console.log(data)}
-            });
-        }
-    );  */ 
-
+    // CERRAR POPUP
+    let txtAccept = document.querySelector('#txtAccept');
+    var popup = document.querySelector('.popup');
+    txtAccept.addEventListener('click', function(){
+        $(popup).hide(500);
+    });
 });
