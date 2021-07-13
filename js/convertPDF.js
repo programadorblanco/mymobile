@@ -206,10 +206,13 @@ window.addEventListener("load", function(){
         var mensaje;
         if(lineas.length == 0){
             console.log("No firmo");
+            $('canvas').css("border", "1px solid red");
+                 
         }
         else{
             console.log("Firmo");
             signature = miCanvas.toDataURL("image/png");
+            $('canvas').css("border", "none");
         }
         
         var warningTemporal = [];
@@ -244,7 +247,35 @@ window.addEventListener("load", function(){
                     mensaje = $('.'+ warningTemporal[j] + ' .flex select');
                     mensaje.css("border", "1px solid #c7c7c7"); 
                 } 
+
+                if(arrayProp[11] == ""){
+                    mensaje = $('.'+ warningTemporal[11] + ' .container-file label');
+                    mensaje.css("border", "1px solid red");
+                }
+                else{
+                    mensaje = $('.'+ warningTemporal[11] + ' .container-file label');
+                    mensaje.css("border", "none"); 
+                }  
+
+                if(arrayProp[12] == ""){
+                    mensaje = $('.'+ warningTemporal[12] + ' .container-file label');
+                    mensaje.css("border", "1px solid red");
+                }
+                else{
+                    mensaje = $('.'+ warningTemporal[12] + ' .container-file label');
+                    mensaje.css("border", "none"); 
+                }
+
+                if(arrayProp[13] == ""){
+                    mensaje = $('.'+ warningTemporal[13] + ' .container-file label');
+                    mensaje.css("border", "1px solid red");
+                }
+                else{
+                    mensaje = $('.'+ warningTemporal[13] + ' .container-file label');
+                    mensaje.css("border", "none"); 
+                }
             }
+            console.log(arrayProp, warningTemporal);
             arrayProp.splice(0, arrayProp.length);
             $('.result').show(500);
             warnings.splice(0, warnings.length);
@@ -259,9 +290,12 @@ window.addEventListener("load", function(){
         reader.onload = function()
         {
             direccion1 = reader.result;
-            document.querySelector('._idFront .message').style.display = "block";
+            $('.popup-image').show(500);
+            $('.popup-image').css("display", "flex");
+            $('#lbl-front').css("color", "green");
         };
         reader.readAsDataURL(event.target.files[0]);
+        
     });
 
     // EVENTO PARA CARGAR LA FOTO ID DE LA PARTE DE TRASERA
@@ -271,9 +305,12 @@ window.addEventListener("load", function(){
         reader.onload = function()
         {
             direccion3 = reader.result;
-            document.querySelector('._idBack .message').style.display = "block";
+            $('.popup-image').show(500);
+            $('.popup-image').css("display", "flex");
+            $('#lbl-back').css("color", "green");
         };
         reader.readAsDataURL(event.target.files[0]);
+       
     });
 
     // EVENTO PARA CARGAR LA FOTO SELFIE
@@ -283,9 +320,12 @@ window.addEventListener("load", function(){
         reader.onload = function()
         {
             direccion2 = reader.result;
-            document.querySelector('._selfie .message').style.display = "block";
+            $('.popup-image').show(500);
+            $('.popup-image').css("display", "flex");
+            $('#lbl-selfie').css("color", "green");
         };
         reader.readAsDataURL(event.target.files[0]);
+        
     });
 
 

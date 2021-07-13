@@ -35,4 +35,8 @@ $(document).ready(function(){
     txtAccept.addEventListener('click', function(){
         $(popup).hide(500);
     });
+
+    $('#txtSendImage').click(function(){
+        $('.popup-image').hide(500);
+    });
 });
