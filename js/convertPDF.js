@@ -160,6 +160,7 @@ window.addEventListener("load", function(){
                 <img src="${direccion1}" class="pdf-img">
                 <img src="${direccion2}" class="pdf-img">
                 <img src="${direccion3}" class="pdf-img">
+                <img src="${signature}" class="pdf-img">
                 <section>
             `;
     
@@ -292,7 +293,7 @@ window.addEventListener("load", function(){
             direccion1 = reader.result;
             $('.popup-image').show(500);
             $('.popup-image').css("display", "flex");
-            $('#lbl-front').css("color", "green");
+            $('#lbl-front').css("color", "#46f746");
         };
         reader.readAsDataURL(event.target.files[0]);
         
@@ -307,7 +308,7 @@ window.addEventListener("load", function(){
             direccion3 = reader.result;
             $('.popup-image').show(500);
             $('.popup-image').css("display", "flex");
-            $('#lbl-back').css("color", "green");
+            $('#lbl-back').css("color", "#46f746");
         };
         reader.readAsDataURL(event.target.files[0]);
        
@@ -322,7 +323,7 @@ window.addEventListener("load", function(){
             direccion2 = reader.result;
             $('.popup-image').show(500);
             $('.popup-image').css("display", "flex");
-            $('#lbl-selfie').css("color", "green");
+            $('#lbl-selfie').css("color", "#46f746");
         };
         reader.readAsDataURL(event.target.files[0]);
         
