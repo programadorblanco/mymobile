@@ -81,3 +81,75 @@
         </div> 
     </body>
 </html>
+
+
+<div class="pdf-flex">
+    <div class="pdf-label">
+        <p>Printed name:</p>
+    </div>
+    <div class="pdf-input">
+        <div class="superior">
+            <span class="nombre">Alfonso</span>
+            <span class="middle">Manuel</span>
+            <span class="apellido">Melendez</span>
+        </div>
+        <hr>
+        <div class="inferior">
+            <span class="nombre">First</span>
+            <span class="middle">Middle</span>
+            <span class="apellido">Last</span>
+        </div>
+    </div>
+</div>
+
+<div class="pdf-flex">
+    <div class="pdf-label">
+        <p>Other names used:</p>
+    </div>
+    <div class="pdf-input">
+        <div class="superior">
+            <span class="oher">Alfonso Madeira Cuevas</span>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<div class="guru-flex">
+    <div class="sub-flex">
+        <div class="sup">
+            <span>October 12, 2021</span>
+        </div>
+        <div class="inf">
+            <span>from Mo/Yr</span>
+        </div>
+    </div>
+    <div class="sub-flex">
+        <div class="sup">
+            <span>December 12, 2021</span>
+        </div>
+        <div class="inf">
+            <span>from Mo/Yr</span>
+        </div>
+    </div>
+    <div class="sub-flex">
+        <div class="sup">
+            <span>Tijuana, Baja California 22615</span>
+        </div>
+        <div class="inf inf-flex">
+            <span>Street</span>
+            <span>City, State & Zip</span>
+        </div>
+    </div>
+</div>
+
+<style>
+    .guru-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sub-flex{
+        display: flex;
+        flex-direction: column;
+    }
+</style>

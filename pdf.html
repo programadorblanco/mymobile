@@ -1,0 +1,240 @@
+<section class="body margin">
+    <p class="center"><strong>Authorization</strong></p>
+    <p class="justify"><strong class="bottom">Authorization:</strong> By signing below, you authorize: (a) backgroundchecks.com (“BGC”) to request information about you from any public or private information source; (b) anyone to provide information about you to BGC; (c) BGC to provide us <strong>My Mobile, LLC</strong> and its client, TracFone Wireless, Inc., one or more reports based on that information; and (d) us to share those reports with others for legitimate business purposes related to your employment. BGC may investigate your education, work history, professional licenses and credentials, references, address history, social security number validity, right to work, criminal record, lawsuits, driving record, credit history, and any other information with public or private information sources. You acknowledge that a fax, image, or copy of this authorization is as valid as the original. You make this authorization to be valid for as long as you are an applicant or employee with us</p>
+    <p class="justify">The Consumer Financial Protection Bureau’s “Summary of Your Rights under the Fair Credit Reporting Act” is attached to this authorization. If you are a New York applicant, a copy of New York’s law on the use of criminal records is attached. By signing below, you acknowledge receipt of these documents.</p>
+    <p class="justify"><strong class="bottom">Personal Information:</strong> Please print the information requested below to identify yourself for BGC</p><br/>
+    <div class="pdf-flex">
+        <div class="pdf-label">
+            <p>Printed name:</p>
+        </div>
+        <div class="pdf-input">
+            <div class="superior">
+                <span class="nombre">${name}</span>
+                <span class="middle">Falta Variable</span>
+                <span class="apellido">${lname}</span>
+            </div>
+            <div class="inferior inf">
+                <span class="nombre">First</span>
+                <span class="middle">Middle</span>
+                <span class="apellido">Last</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="pdf-flex">
+        <div class="pdf-label">
+            <p>Other names used:</p>
+        </div>
+        <div class="pdf-input">
+            <div class="superior">
+                <span class="oher">Falta Variable</span>
+            </div>
+            <div class="inf"></div>
+        </div>
+    </div>
+    <p>Current and former addresses:</p>
+    <div class="guru-flex">
+        <div class="s1">
+            <div class="sup">
+                <span>FALTA VARIABLE</span>
+            </div>
+            <div class="inf">
+                <span>from Mo/Yr</span>
+            </div>
+        </div>
+        <div class="s2">
+            <div class="sup">
+                <span>Current</span>
+            </div>
+            <div class="inf">
+                <span>from Mo/Yr</span>
+            </div>
+        </div>
+        <dis class="s3">
+            <div class="sup">
+                <span>${address} ${city} ${state} ${zipcode}</span>
+            </div>
+            <div class="inf inf-flex">
+                <span>Street</span>
+                <span>City, State & Zip</span>
+            </div>
+        </div>
+    </div><br>
+    <div class="guru-flex">
+        <div class="s1">
+            <div class="sup">
+                <span></span>
+            </div>
+            <div class="inf">
+                <span>from Mo/Yr</span>
+            </div>
+        </div>
+        <div class="s2">
+            <div class="sup">
+                <span></span>
+            </div>
+            <div class="inf">
+                <span>from Mo/Yr</span>
+            </div>
+        </div>
+        <dis class="s3">
+            <div class="sup">
+                <span></span>
+            </div>
+            <div class="inf inf-flex">
+                <span>Street</span>
+                <span>City, State & Zip</span>
+            </div>
+        </div>
+    </div> <br>
+    <div class="guru-flex">
+        <div class="s1">
+            <div class="sup">
+                <span></span>
+            </div>
+            <div class="inf">
+                <span>from Mo/Yr</span>
+            </div>
+        </div>
+        <div class="s2">
+            <div class="sup">
+                <span></span>
+            </div>
+            <div class="inf">
+                <span>from Mo/Yr</span>
+            </div>
+        </div>
+        <dis class="s3">
+            <div class="sup">
+                <span></span>
+            </div>
+            <div class="inf inf-flex">
+                <span>Street</span>
+                <span>City, State & Zip</span>
+            </div>
+        </div>
+    </div>
+    <div class="div-signature">
+        <div class="sub-container">
+            <div class="sign">
+                <img src="${signature}" class="img-signature">
+            </div>
+            <div class="inf">
+                <span>Signature</span>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="date-a">
+                <span>FALTA VARIABLE</span>
+            </div>
+            <div class="inf">
+                <span>Date</span>
+            </div>
+        </div>
+    </div>
+    <section>
+        <style>
+.justify{
+    text-align: justify;
+}
+
+.body p, body span{
+    font-size: 12px;
+    color: black;
+}
+
+.center{
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-size: 14px !important;
+}
+
+.body{
+    padding: 85px;
+}
+
+.pdf-img{
+    width: 100px;
+}
+
+.bottom{
+    text-decoration: underline;
+}
+
+.pdf-flex{
+    display: flex;
+    align-items: center;
+}
+
+.pdf-label{
+    width: 25%;
+}
+
+.pdf-input{
+    width: 75%;
+}
+
+.superior, .inferior{
+    display: flex;
+}
+
+.nombre, .middle, .apellidos{
+    width: 33%;
+}
+
+.guru-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-flex{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.inf{
+    border-top: 2px solid black;
+}
+
+.inf-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sup, .inf{
+    width: 100%;
+}
+
+.s1, .s2{
+    width: 19%;
+}
+
+.s3{
+    width: 59%;
+}
+
+.div-signature{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container{
+    width: 45%;
+}
+
+.img-signature{
+    width: 200px;
+}
+
+.margin{
+    margin-bottom: 100px;
+}
+        </style>

@@ -3,6 +3,8 @@ window.addEventListener("load", function(){
     var dataUrl = "data:image/png;base64,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";
     var direccion1 = '', direccion2 = '', direccion3 = '';
     var name = $('#name');
+    var lname = $('#lName');
+    var middle = "";
     var SSN = $('#ssn-full');
     var phone = $('#phone');
     var email = $('#email');
@@ -155,17 +157,197 @@ window.addEventListener("load", function(){
 
     function generatePDF(){
             const body1 = `
-                <section class="body">
-                <p class="justify">Authorization: By signing below, you authorize: (a) backgroundchecks.com (“BGC”) to request information about you from any public or private information source; (b) anyone to provide information about you to BGC; (c) BGC to provide us My Mobile, LLC and its client, TracFone Wireless, Inc., one or more reports based on that information; and (d) us to share those reports with others for legitimate business purposes related to your employment. BGC may investigate your education, work history, professional licenses and credentials, references, address history, social security number validity, right to work, criminal record, lawsuits, driving record, credit history, and any other information with public or private information sources. You acknowledge that a fax, image, or copy of this authorization is as valid as the original. You make this authorization to be valid for as long as you are an applicant or employee with us<p>
-                <img src="${direccion1}" class="pdf-img">
-                <img src="${direccion2}" class="pdf-img">
-                <img src="${direccion3}" class="pdf-img">
-                <img src="${signature}" class="pdf-img">
+            <section class="body margin">
+                <p class="center"><strong>Authorization</strong></p>
+                <p class="justify"><strong class="bottom">Authorization:</strong> By signing below, you authorize: (a) backgroundchecks.com (“BGC”) to request information about you from any public or private information source; (b) anyone to provide information about you to BGC; (c) BGC to provide us <strong>My Mobile, LLC</strong> and its client, TracFone Wireless, Inc., one or more reports based on that information; and (d) us to share those reports with others for legitimate business purposes related to your employment. BGC may investigate your education, work history, professional licenses and credentials, references, address history, social security number validity, right to work, criminal record, lawsuits, driving record, credit history, and any other information with public or private information sources. You acknowledge that a fax, image, or copy of this authorization is as valid as the original. You make this authorization to be valid for as long as you are an applicant or employee with us</p>
+                <p class="justify">The Consumer Financial Protection Bureau’s “Summary of Your Rights under the Fair Credit Reporting Act” is attached to this authorization. If you are a New York applicant, a copy of New York’s law on the use of criminal records is attached. By signing below, you acknowledge receipt of these documents.</p>
+                <p class="justify"><strong class="bottom">Personal Information:</strong> Please print the information requested below to identify yourself for BGC</p><br/>
+                <div class="pdf-flex">
+                    <div class="pdf-label">
+                        <p>Printed name:</p>
+                    </div>
+                    <div class="pdf-input">
+                        <div class="superior">
+                            <span class="nombre">${name}</span>
+                            <span class="middle">Falta Variable</span>
+                            <span class="apellido">${lname}</span>
+                        </div>
+                        <div class="inferior inf">
+                            <span class="nombre">First</span>
+                            <span class="middle">Middle</span>
+                            <span class="apellido">Last</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="pdf-flex">
+                    <div class="pdf-label">
+                        <p>Other names used:</p>
+                    </div>
+                    <div class="pdf-input">
+                        <div class="superior">
+                            <span class="oher">Falta Variable</span>
+                        </div>
+                        <div class="inf"></div>
+                    </div>
+                </div>
+                <p>Current and former addresses:</p>
+                <div class="guru-flex">
+                    <div class="s1">
+                        <div class="sup">
+                            <span>FALTA VARIABLE</span>
+                        </div>
+                        <div class="inf">
+                            <span>from Mo/Yr</span>
+                        </div>
+                    </div>
+                    <div class="s2">
+                        <div class="sup">
+                            <span>Current</span>
+                        </div>
+                        <div class="inf">
+                            <span>from Mo/Yr</span>
+                        </div>
+                    </div>
+                    <dis class="s3">
+                        <div class="sup">
+                            <span>${address} ${city} ${state} ${zipcode}</span>
+                        </div>
+                        <div class="inf inf-flex">
+                            <span>Street</span>
+                            <span>City, State & Zip</span>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="guru-flex">
+                    <div class="s1">
+                        <div class="sup">
+                            <span></span>
+                        </div>
+                        <div class="inf">
+                            <span>from Mo/Yr</span>
+                        </div>
+                    </div>
+                    <div class="s2">
+                        <div class="sup">
+                            <span></span>
+                        </div>
+                        <div class="inf">
+                            <span>from Mo/Yr</span>
+                        </div>
+                    </div>
+                    <dis class="s3">
+                        <div class="sup">
+                            <span></span>
+                        </div>
+                        <div class="inf inf-flex">
+                            <span>Street</span>
+                            <span>City, State & Zip</span>
+                        </div>
+                    </div>
+                </div> <br>
+                <div class="guru-flex">
+                    <div class="s1">
+                        <div class="sup">
+                            <span></span>
+                        </div>
+                        <div class="inf">
+                            <span>from Mo/Yr</span>
+                        </div>
+                    </div>
+                    <div class="s2">
+                        <div class="sup">
+                            <span></span>
+                        </div>
+                        <div class="inf">
+                            <span>from Mo/Yr</span>
+                        </div>
+                    </div>
+                    <dis class="s3">
+                        <div class="sup">
+                            <span></span>
+                        </div>
+                        <div class="inf inf-flex">
+                            <span>Street</span>
+                            <span>City, State & Zip</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-signature">
+                    <div class="sub-container">
+                        <div class="sign">
+                            <img src="${signature}" class="img-signature">
+                        </div>
+                        <div class="inf">
+                            <span>Signature</span>
+                        </div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="date-a">
+                            <span>FALTA VARIABLE</span>
+                        </div>
+                        <div class="inf">
+                            <span>Date</span>
+                        </div>
+                    </div>
+                </div>
                 <section>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <section>
+                <p class="center"><strong>Disclosure</strong></p>
+                <p class="justify">We <strong class="bottom">My Mobile, LLC</strong> and our client, TracFone Wireless, Inc., will obtain one or more consumer reports or investigative consumer reports (or both) about you for purposes of employment with My Mobile, LLC and potential assignment to work on projects for our client TracFone Wireless, Inc. These purposes may include hiring, contract, assignment, promotion, re-assignment, and termination. The reports will include information about your character, general reputation, personal characteristics, and mode of livin</p>
+                <p class="justify">We will obtain these reports through a consumer reporting agency. Our consumer reporting agency is backgroundchecks.com (“BGC”). BGC’s address is P.O. Box 353, Chapin, SC 29036. BGC’s telephone number is (866) 265-6602. BGC’s website is www.backgroundchecks.com, where you can find information about whether BGC’s international privacy practices.</p>
+                <p class="justify">To prepare the reports, BGC may investigate your education, work history, professional licenses and credentials, references, address history, social security number validity, right to work, criminal record, lawsuits, driving record, credit history, and any other information with public or private information sources.</p>
+                <p class="justify">You may obtain a copy of any report that BGC provides and BGC’s files about you (in person, by mail, or by phone) by providing identification to BGC. If you do, BGC will provide you help to understand the files, including trained personnel and an explanation of any codes. Another person may accompany you by providing identification.</p>
+                <p class="justify">If BGC obtains any information by interview, you have the right to obtain a complete and accurate disclosure of the scope and nature of the investigation performed</p>
+                <p class="justify">Please sign below to acknowledge your receipt of this disclosure.</p>
+                <br><br>
+                <div class="div-signature">
+                    <div class="sub-container">
+                        <div class="sign">
+                            <img src="${signature}" class="img-signature">
+                        </div>
+                        <div class="inf">
+                            <span>Signature</span>
+                        </div>
+                    </div>
+                    <div class="sub-container">
+                        <div class="date-a">
+                            <span>FALTA VARIABLE</span>
+                        </div>
+                        <div class="inf">
+                            <span>Date</span>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="div-signature">
+                    <div class="sub-container">
+                        <div class="date-a">
+                            <span>${name} ${middle} ${lname}</span>
+                        </div>
+                        <div class="inf">
+                            <span>Printed Name</span>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <section>
+                <p class="center"><strong>Information</strong></p>
+                <p>SSN: <span>${SSN}</span></p>
+                <p>Date of birthday: <span>${month} ${day}, ${year}</span></p>
+                <p>Phone: <span>${phone}</span></p>
+                <p>Email: <span>${email}</span></p>
+                <img src="${idFront}" class="img-signature">
+                <img src="${idBack}" class="img-signature">
+                <span><img src="${selfie}" class="img-signature">
+                </section>
             `;
     
         html2pdf().from(body1).save();
     };
+    // generatePDF();
 
     // EVENTO PARA EJECUTAR EL SUBMIT DEL FORMULARIO
     var warnings = [];
@@ -174,6 +356,7 @@ window.addEventListener("load", function(){
         event.preventDefault();
         // CAMPOS DEL FORMULARIO
         name = $('#name').val();
+        lname = $('#lName').val();
         SSN = $('#ssn-full').val();
         phone = $('#phone').val();
         email = $('#email').val();
