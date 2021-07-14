@@ -30,6 +30,13 @@
                     </div>
                     <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
+                <div class="box _middle-name">
+                    <div class="flex">
+                        <div><label>Middle Name</label></div>
+                        <div><input name="middleName" id="middleName" type="text" class="input" placeholder="Enter Middle Name" autocomplete="nope"></div>
+                    </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
+                </div>
                 <div class="box _last-name">
                     <div class="flex">
                         <div><label>Last Name</label></div>
@@ -49,12 +56,23 @@
                         <div><label>Date of Birth</label></div>
                         <div class="container-select">
                             <select class="select" id="month" name="month">
-                                <option value="default">Select Value</option>
+                                <option value="default">Month</option>
                             </select>
                             <select class="select" id="day" name="day">
-                                <option value="default">Select Value</option>
+                                <option value="default">Day</option>
                             </select>
                             <select class="select" id="year" name="year">
+                                <option value="default">Year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
+                </div>
+                <div class="box _gender">
+                    <div class="flex">
+                        <div><label>Gender</label></div>
+                        <div class="container-select">
+                            <select class="select" id="gender" name="gender">
                                 <option value="default">Select Value</option>
                             </select>
                         </div>
@@ -108,10 +126,35 @@
                     <div class="message"><label>Imagen cargada</label></div>
                     <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>
+                <div class="box _sizes">
+                    <div class="flex">
+                        <div><label>T-shirt Size</label></div>
+                        <div class="container-select">
+                            <select class="select" id="sizes" name="sizes">
+                                <option value="default">Select Value</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
+                </div>
                 <div class="box _address">
                     <div class="flex">
                         <div><label>Address</label></div>
                         <div><input name="address" id="address" type="text" class="input" placeholder="Enter Address" autocomplete="nope"></div>
+                    </div>
+                    <div class="warning"><label>Debe llenar este campo *</label></div>
+                </div>
+                <div class="box _day2">
+                    <div class="flex">
+                        <div><label>When did you start living here?</label></div>
+                        <div class="container-select">
+                            <select class="select" id="month2" name="month2">
+                                <option value="default">Month</option>
+                            </select>
+                            <select class="select" id="year2" name="year2">
+                                <option value="default">Year</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="warning"><label>Debe llenar este campo *</label></div>
                 </div>

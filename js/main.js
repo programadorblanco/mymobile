@@ -11,15 +11,21 @@ $(document).ready(function(){
 
     // MONTH
     let month = $('#month');
+    let month2 = $('#month2');
     let arraymonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     arraymonth.forEach(valor =>{
         month.append("<option value='"+valor+"'>"+valor+"</option>");
+        month2.append("<option value='"+valor+"'>"+valor+"</option>");
     });
 
     // YEAR
     let year = $('#year');
-    for(let i = 2020; i>1970; i--){
+    let year2 = $('#year2');
+    var today = new Date();
+    var yyyy = today.getFullYear();
+    for(let i = yyyy; i>1970; i--){
         year.append("<option value='"+i+"'>"+i+"</option>");
+        year2.append("<option value='"+i+"'>"+i+"</option>");
     }
 
     // STATE
@@ -27,7 +33,12 @@ $(document).ready(function(){
     let arrayState = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District Of Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Massachusetts", "Maryland", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"];
     arrayState.forEach(valor =>{
         state.append("<option value='"+valor+"'>"+valor+"</option>");
-    });  
+    }); 
+
+    // GENDER
+    let gender = $('#gender');
+    gender.append("<option value='Man'>Man</option>");
+    gender.append("<option value='Woman'>Woman</option>");
 
     // CERRAR POPUP
     let txtAccept = document.querySelector('#txtAccept');
@@ -35,6 +46,13 @@ $(document).ready(function(){
     txtAccept.addEventListener('click', function(){
         $(popup).hide(500);
     });
+
+    // STATE
+    let sizes = $('#sizes');
+    let arraySizes = ["XS", "S", "M", "L", "XL", "XXL"];
+    arraySizes.forEach(valor =>{
+        sizes.append("<option value='"+valor+"'>"+valor+"</option>");
+    }); 
 
     $('#txtSendImage').click(function(){
         $('.popup-image').hide(500);

@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
     var direccion1 = '', direccion2 = '', direccion3 = '';
     var name = $('#name');
     var lname = $('#lName');
-    var middle = "";
+    var middle = $('#middleName');
     var SSN = $('#ssn-full');
     var phone = $('#phone');
     var email = $('#email');
@@ -15,9 +15,19 @@ window.addEventListener("load", function(){
     var month = $('#month');
     var day = $('#day');
     var year = $('#year');
+    var month2 = $('#month2');
+    var year2 = $('#year2');
+    var gender = $('#gender');
+    var sizes = $('#sizes');
     var idFront;
     var idBack;
     var selfie;
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
     //======================================================================
     //======================================================================
     // LOGICA PARA EL CANVA
@@ -169,7 +179,7 @@ window.addEventListener("load", function(){
                     <div class="pdf-input">
                         <div class="superior">
                             <span class="nombre">${name}</span>
-                            <span class="middle">Falta Variable</span>
+                            <span class="middle">${middle}</span>
                             <span class="apellido">${lname}</span>
                         </div>
                         <div class="inferior inf">
@@ -186,7 +196,7 @@ window.addEventListener("load", function(){
                     </div>
                     <div class="pdf-input">
                         <div class="superior">
-                            <span class="oher">Falta Variable</span>
+                            <span class="oher">${middle}</span>
                         </div>
                         <div class="inf"></div>
                     </div>
@@ -195,7 +205,7 @@ window.addEventListener("load", function(){
                 <div class="guru-flex">
                     <div class="s1">
                         <div class="sup">
-                            <span>FALTA VARIABLE</span>
+                            <span>${month2}/${year2}</span>
                         </div>
                         <div class="inf">
                             <span>from Mo/Yr</span>
@@ -284,7 +294,7 @@ window.addEventListener("load", function(){
                     </div>
                     <div class="sub-container">
                         <div class="date-a">
-                            <span>FALTA VARIABLE</span>
+                            <span>${today}</span>
                         </div>
                         <div class="inf">
                             <span>Date</span>
@@ -313,7 +323,7 @@ window.addEventListener("load", function(){
                     </div>
                     <div class="sub-container">
                         <div class="date-a">
-                            <span>FALTA VARIABLE</span>
+                            <span>${today}</span>
                         </div>
                         <div class="inf">
                             <span>Date</span>
@@ -339,6 +349,8 @@ window.addEventListener("load", function(){
                 <p>Date of birthday: <span>${month} ${day}, ${year}</span></p>
                 <p>Phone: <span>${phone}</span></p>
                 <p>Email: <span>${email}</span></p>
+                <p>Gender: <span>${gender}</span></p>
+                <p>T-shirt Size: <span>${sizes}</span></p>
                 <img src="${idFront}" class="img-signature">
                 <img src="${idBack}" class="img-signature">
                 <span><img src="${selfie}" class="img-signature">
