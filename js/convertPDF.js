@@ -368,6 +368,9 @@ window.addEventListener("load", function(){
         event.preventDefault();
         // CAMPOS DEL FORMULARIO
         name = $('#name').val();
+
+        middle = $('#middleName').val();
+
         lname = $('#lName').val();
         SSN = $('#ssn-full').val();
         phone = $('#phone').val();
@@ -379,6 +382,12 @@ window.addEventListener("load", function(){
         month = $('#month').val();
         day = $('#day').val();
         year = $('#year').val();
+
+        month2 = $('#month2').val();
+        year2 = $('#year2').val();
+        gender = $('#gender').val();
+        sizes = $('#sizes').val();
+
         idFront = direccion1;
         idBack = direccion3;
         selfie = direccion2;
@@ -394,6 +403,10 @@ window.addEventListener("load", function(){
             _day: day,
             _month: month,
             _year: year,
+            _month2: month2,
+            _year2: year2,
+            _gender: gender,
+            _sizes: sizes,
             _idFront: idFront,
             _idBack: idBack,
             _selfie: selfie
@@ -423,7 +436,7 @@ window.addEventListener("load", function(){
             generatePDF();
             $('.popup').show(500);
             $('.popup').css("display", "flex");
-            setTimeout(function(){ location.reload(); }, 3250);
+            setTimeout(function(){ location.reload(); }, 6250);
         }
         else{
             for(var j = 0; j < warnings.length; j++){

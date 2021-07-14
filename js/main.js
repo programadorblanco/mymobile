@@ -23,7 +23,11 @@ $(document).ready(function(){
     let year2 = $('#year2');
     var today = new Date();
     var yyyy = today.getFullYear();
-    for(let i = yyyy; i>1970; i--){
+    for(let i = (yyyy-18); i>(yyyy-50); i--){
+        year.append("<option value='"+i+"'>"+i+"</option>");
+        year2.append("<option value='"+i+"'>"+i+"</option>");
+    }
+    for(let i = yyyy; i>(yyyy-50); i--){
         year.append("<option value='"+i+"'>"+i+"</option>");
         year2.append("<option value='"+i+"'>"+i+"</option>");
     }
